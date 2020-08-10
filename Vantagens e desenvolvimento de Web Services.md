@@ -20,10 +20,10 @@ linguagens de marcação -> usadas para comunicação entre aplicações
 
 SOAP = simple object access protocol 
 
-- baseado em xml para acessar serviços web por http 
-- é uma definição de como serviços web se comunicam 
-- desenvolvido para facilitar integrações entre aplicações em diferentes linguagens
-- independe de plataforma e software
+- Baseado em xml para acessar serviços web por http 
+- É uma definição de como serviços web se comunicam 
+- Desenvolvido para facilitar integrações entre aplicações em diferentes linguagens
+- Independe de plataforma e software
 - Meio de transporte genérico pode ser usado por outros protocolos além do http 
 
 
