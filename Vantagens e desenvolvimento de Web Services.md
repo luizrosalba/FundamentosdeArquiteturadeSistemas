@@ -97,4 +97,34 @@ Métodos HTTP :
 - DELETE solicita a exclusão de um recurso 
 - PUT  solicita a atualização de um recurso (ex atualiza o texto do twwt)
 
+Para um serviço web ser considerado rest, deve seguir esta arquitetura . get representa, post cria, delete exclui e put atualiza. 
+
+JSON 
+- JSON Javascript Object Notation  ( apesar de poder ser usada em qquer linguagem) 
+- Formatação leve utilizada para troca de mensagens entre sistemas 
+- Usa-se de uma estrutura de chave e valor e também de listas ordenadas 
+- Um dos formatos mais populares 
+
+ex: 
+```Javascript
+{
+ "nome": "Os vingadores". 
+ "ano": "2019", 
+ "personagens":[
+ {
+  "nome": "Thanos" 
+ },
+ {
+  "nome": "thor" 
+ },
+ {
+  "nome": "Hulk" 
+ }
+ ]
+}
+```
+
+## Integração com REST e métodos HTTP na prática
+
+
 
