@@ -47,10 +47,13 @@ ex :
 </soap:Header> 
 <soap:Body>
 <m:MetodoEndereco xmlns:m="endereco/endereco"> 
-<m:Cidade> </m:Cidade>
-<m:CEP> </m:CEP>
-<m:Numero> </m:Numero>
+<m:Cidade> nomecidade </m:Cidade>
+<m:CEP> numcep </m:CEP>
+<m:Numero> num </m:Numero>
 <m:Endereco>
 </soap:Body>
 </soap:Envelope> 
 ```
+
+## Entendendo o que é WSDL e XSD
+
