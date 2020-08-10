@@ -126,5 +126,16 @@ ex:
 
 ## Integração com REST e métodos HTTP na prática
 
+Código de Estado (Status Code) 
+
+Usado pelo servidor para avisar o cliente sobre o estado da operação solicitada 
+
+- 1xx - informativo 
+- 2xx sucesso 
+- 3xx redirecionamento 
+- 4xx erro do cliente 
+- 5xx erro do servidor 
+
+
 
 
