@@ -79,5 +79,22 @@ Rest
 - É um estilo de arquitetura de software que define a implementação de um serviço web 
 - Podem trabalhar com os formatos XML , JSON ou outros 
 - utiliza http para definir a operação que está sendo efetuada 
-
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/Capturar.PNG?raw=true)
+
+API : 
+
+- Application Programmin Interface
+- São conjuntos de rotinas documentadas e disponibilizadas por uma aplicação para que outras aplicações possam consumir suas funcionalidades
+- Popular com o aumento dos serviçoes web 
+- Facebook , Twitter , Telegram , Wzap , Github ... 
+- Apis podem ser rest , json , etc... 
+
+
+Métodos HTTP : 
+
+- GET  solicita a representação de um recurso ( ex pegar um tweet) 
+- POST solicita a criação de um recurso (ex criar um tweet)
+- DELETE solicita a exclusão de um recurso 
+- PUT  solicita a atualização de um recurso (ex atualiza o texto do twwt)
+
+
