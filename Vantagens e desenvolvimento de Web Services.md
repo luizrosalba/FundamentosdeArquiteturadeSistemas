@@ -67,6 +67,8 @@ XSD
 - Funciona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através do Web Service 
 
 - http://www.soapclient.com/xml/soapresponder.wsdl
+Programa para abrir e identificar com mais facilidade métodos dentro de um soap 
+ele também consegue retornar a requisição dos dados em SOAP 
 - https://www.soapui.org/.
 
 documentation => Descrição do que o serviço faz 
@@ -130,11 +132,20 @@ Código de Estado (Status Code)
 
 Usado pelo servidor para avisar o cliente sobre o estado da operação solicitada 
 
-- 1xx - informativo 
-- 2xx sucesso 
-- 3xx redirecionamento 
-- 4xx erro do cliente 
+- 1xx - informativo (ex: recebido , aceito , mas ainda nao terminou)
+- 2xx sucesso  (solicitação aceita , processada com sucesso) 
+- 3xx redirecionamento (ação necessária para o cliente ex mudança de site) 
+- 4xx erro do cliente  
 - 5xx erro do servidor 
+
+Lista de Códigos de estado 
+- https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+Programa para simular trocas de msg http 
+- https://www.postman.com/downloads/
+- É possivel usar o python e o javascript para utilizar comandos HTTP. 
+
+
 
 
 
