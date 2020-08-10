@@ -26,4 +26,31 @@ SOAP = simple object access protocol
 - Independe de plataforma e software
 - Meio de transporte genérico pode ser usado por outros protocolos além do http 
 
+XML = Extensible Markup Languange 
 
+- criada na décade de 90 pela W3C 
+- Facilita a separação de conteúdo 
+- Não tem limitação de criação de tags 
+
+Estrutura SOAP 
+
+- O soap message possui uma estrutura unica que deve ser sempre seguida 
+- soap envelope (container) -> soap header -> soap body 
+- Envelope é usado para encapsular toda a mensagem soap 
+- header elemento que possui informações de atributos e metadados da requisição 
+- body contem os detalhes da mensagem 
+
+ex : 
+```Javascript
+<soap:Envelope xmlns:soap="endereço/soap-envelope"> 
+<soap:Header> 
+</soap:Header> 
+<soap:Body>
+<m:MetodoEndereco xmlns:m="endereco/endereco"> 
+<m:Cidade> </m:Cidade>
+<m:CEP> </m:CEP>
+<m:Numero> </m:Numero>
+<m:Endereco>
+</soap:Body>
+</soap:Envelope> 
+```
