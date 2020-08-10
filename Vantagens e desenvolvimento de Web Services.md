@@ -56,4 +56,27 @@ ex :
 ```
 
 ## Entendendo o que é WSDL e XSD
+WSDL 
+- Web Service Description Language 
+- Descreve Web Services funciona como um contrado do serviço 
+- A descrição é feita em um documento XML, onde é descrito o serviço , especificiações de acesso , portas, métodos ,etc; 
+
+XSD 
+- XML Schema Definition 
+- É um schema no formato XMl usado para definir a estrutura de dados que será validada no xml 
+- Funciona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através do Web Service 
+
+- http://www.soapclient.com/xml/soapresponder.wsdl
+- https://www.soapui.org/.
+
+documentation => Descrição do que o serviço faz 
+
+Python zeep -> cliente soap para python 
+
+## Aprenda o que são REST, API e JSON
+Rest 
+- Representational State Transfer 
+- É um estilo de arquitetura de software que define a implementação de um serviço web 
+- Podem trabalhar com os formatos XML , JSON ou outros 
+- utiliza http para definir a operação que está sendo efetuada 
 
