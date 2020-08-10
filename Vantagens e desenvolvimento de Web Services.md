@@ -80,3 +80,4 @@ Rest
 - Podem trabalhar com os formatos XML , JSON ou outros 
 - utiliza http para definir a operação que está sendo efetuada 
 
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/Capturar.PNG?raw=true)
