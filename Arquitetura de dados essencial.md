@@ -54,4 +54,64 @@ DER (diagrama de entidade relacionamento) Um desenho que mostra como o modelo se
 - Select ... from ... where ... groupby ... having ... orderby 
 
 Exemplo : Select quantidade ,valor , descricao from Item_venda Join Produto On Codigo = Cod.Produto Where Valor > 5 
-![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas)
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/4444.PNG?raw=true)
+
+- Funções de conjunto - Sun , min , max, avg dentre outras que podem ser utiizadas para aplicar uma operação a collunas de um BD 
+- Exemplo de query de funções de conjunto : 
+
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/55555.PNG?raw=true)
+
+- Indexadores Um index é uma pequena tabela extraida da tabela original apenas com as colunas que desejamos ordenar . Ela é física (armazenada no servidor )e memória (estará ocupando memória) . Podemos criar quantos indices forem necessarios para uma tabela . Indices afetam os recursos no dml . Ao incluir uma nova linha o sistema precisará fazer a mesma coisa no index 
+
+
+## Transactions 
+- Consumo e tratamento de informações em um nivel de isolamento. O sistema gerenciador de banco de dados deve permitir a concorrencia de recursos para muitos usuarios (transactions , ou aquilo que se pode fazer dentro de uma sessão).  Cada operação realiza dentre de um BD é tratada como uma transação independente, tem começo , meio e fim . 
+- O padrão de isolamento é o reading commited. Pode-se ler aquilo que já foi aplciado no banco 
+- Em uma transação diversos usuarios podem sobrepor informações 
+- Ex : 
+- Inicio (Insert, Delete, Update) 
+- resolução (commit ou rollback ) 
+- Fim ( novos dados ou dados originais) 
+
+- Conceito ACID 
+- Atomicidade Todas as operações são executadas com sucesso, commit ou rollback , mesmo com a conexão interrompida 
+- Consistencia Unicidade de chaves, restrições de integridade lógica , etc (não posso infringir regras do modelo) 
+- Isolamento   Varias transações podem acessar simultaneamento o mesmo registro ou parte do registro. REspeita-se a ordem de chegada 
+- Durabilidadae  Depois do commit , mesmo com erros, queda de energia, etc as alterações devem ser aplicadas 
+
+## SGDBR na prática 
+
+-SGDBs-R (relacionais) : 
+-  Todos tem versões com features reduzidas para aprendizagem ou pequenos negócios 
+-  ORACLE , Microsoft Sql Server , IBM DB2 , 
+-  PostGreSql (gratuito) , Mysql , Sqlite (embarcados , não é bom para sistemas distribuidos, mas pode rodar até mesmo no celular ) 
+
+- Instalamos o postgree sql 
+- no chrome http://127.0.0.1:16751/browser/ 
+- Server 
+- Nome 
+_ connections localhost port 5432 
+- postgree - local onde serão salvos os metadados ( dicionario de dados) nada deve ser alterado ali 
+- criamos uma nova database chamada aula 
+- schema : mapeia o quesito logico da operação 
+- fomos em aula , botao direito , query tool 
+-  executamos no query editor :
+```Javascript
+create table client
+(codigo numeric(10) not null primary key ,
+nome varchar (100) not null , 
+telefone varchar(15))
+```
+- clicando no play a tabela será criada e dando um refresh na database aula você vera a table client 
+- Comando ddl (criacao etc;) nao necessitam de commit cuidado , pois nao tem volta. dar um drop na tabela nao tem volta 
+- Inserimos 
+```Javascript
+insert into client (codigo,nome,telefone)
+values(1,'Lorem Ipsum', '(88)- 8888 9999')
+```
+- e para que seja acplicada aplicamos commit 
+- ao realizar um select * from client vemos o usuario adicionado 
+
+
+
+
