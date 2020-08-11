@@ -46,5 +46,8 @@ Mosquito -> Broker executável em linux que consegue publicar dados de um androi
 GPS embarcado -> HiveMq-> akkaScala JVM ->banco de dados nosql 
 - Solução 
 GPS embarcado -> aws iot core -> aws kinesis firehose -> aws s3 
+- IOT na prática 
+GPS embarcado -> aws iot core -> aws data stream -> aws lambda -> aws elasticCacheRedis-> Aws EC2 -> FeathersJSBackend -> Dashboard
+
 
 
