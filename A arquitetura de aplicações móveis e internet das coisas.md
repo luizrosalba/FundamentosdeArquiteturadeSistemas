@@ -7,4 +7,4 @@ Protocolo MQTT (message queue telemassage transport)  é um protocolo de mensage
 free rtos -> sistema operacional real time 
 Modelo publish / subscribe -> modelo de comunicação do MQTT 
 
-![]https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/Capturar2.PNG?raw=true
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/Capturar2.PNG?raw=true)
