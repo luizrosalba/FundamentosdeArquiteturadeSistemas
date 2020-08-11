@@ -2,9 +2,9 @@
 
 SGDB - Sistemas gerenciadores de banco de dados 
 
-- Linguagem de definição -> Definição da estrutura dos dados 
-- Linguagem de Manipulação -> Recuperação e alteração da informação 
-- Dicionario de Dados  - > banco de dados dentro do banco de dados que guarda a estrutura 
+- DDL Linguagem de definição -> Definição da estrutura dos dados  
+- DML Linguagem de Manipulação -> Recuperação e alteração da informação 
+- DQL Dicionario de Dados  - > banco de dados dentro do banco de dados que guarda a estrutura 
 
 ## Modelos de Banco de dados 
 - Modelo Flat - tabelas com os dados diretamente 
@@ -22,6 +22,7 @@ SGDB - Sistemas gerenciadores de banco de dados
 ## Modelagem 
 
 - 1 Modelo Conceitual - MER 
+- 2 Modelo lógico - Implementação 
 DER (diagrama de entidade relacionamento) Um desenho que mostra como o modelo se comporta, mostrando como as entidades se relacionam. 
 - Dados que não dependem de nenhum outro para existir são chamados de entidades forte ex: usuarios , produtos 
 - Dados que dependem de nenhum outro para existir são chamados de entidades fracas  ex: tabela venda depende de produtos e usuarios 
@@ -41,12 +42,16 @@ DER (diagrama de entidade relacionamento) Um desenho que mostra como o modelo se
 - Se houver dois telefones ou duas informações , essa informação precisa ser quebrada em uma nova coluna ou nova entidade (tabela com relação de chave estrangeira) 
 - 2ª forma normal  resolve o problema da digitação errada ou duplicidade de linhas . Onde havia vendedor com escrita errada , cria-se apenas dois registros ex vendedor ou consultor 
 - 3 ª forma normal - os valores devem ser dependendes da chave primaria e não podem ser dependentes de valores que nao são chave (total depende de valor e quantidade o que pode gerar problemas na hroa de armazenar informações pois o usuario pode alterar uma coluna e o totla nao será atualizado) 
+-  Obs: Só podemos estar na segunda forma se aplicamos a primeira e assim por diante 
 
-- 
+## SGDBR - SQL 
 
+- DDL - Data definition languange 
+- Create 
+- DML Linguagem de Manipulação 
+- Insert, Delete, Update
+- DQL Dicionario de Dados
+- Select ... from ... where ... groupby ... having ... orderby 
 
-
-
-- 2 Modelo lógico - Implementação 
-
-
+Exemplo : Select quantidade ,valor , descricao from Item_venda Join Produto On Codigo = Cod.Produto Where Valor > 5 
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas)
