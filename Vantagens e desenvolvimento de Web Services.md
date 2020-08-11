@@ -155,10 +155,25 @@ figura de monolito
 
 Servidor (BD -> varias instancias <- http proxy)  <- web app e mobile app 
 
-### microserviços 
-Um serviço para cada aplicação 
+### microserviços 1
+Um serviço para cada aplicação Cluster . Os serviços se comunicam e se completam. O proxy de dentro do cluster decide qual serviço 
+responsável por uma determinada demanda . 
+
 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/microservico.PNG?raw=true)
+
+
+### microserviços  2
+Não há mais canal de comunicação direta ( message broker). se 2 para de funcionar nao quebra o serviço 1 . Não há comunicação direta entre serviços . Com o MB quando o serviço retorna , ele peg todas as mensagens do mB e se atualiza. SE o MB quebrar a arquitetura inteira quebra. 
+
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/micro2.PNG)
+
+### microserviços  3
+
+Se comunica através de um gerenciador de pipelines . 
+
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/micro3.PNG?raw=true)
+
 
 
 
