@@ -112,6 +112,11 @@ values(1,'Lorem Ipsum', '(88)- 8888 9999')
 - e para que seja acplicada aplicamos commit 
 - ao realizar um select * from client vemos o usuario adicionado 
 
+- ele se tornou o usuario postgre no ubuntu para mostrar que podemos fazer o mesmo pela linha de comando 
+- sudo su postgre
+- executou psql 
+- create table client (codigo numeric(10) not null primary key , nome varchar (100) not null ,  telefone varchar(15)); 
+- insert into client (codigo,nome,telefone) values(1,'Lorem Ipsum', '(88)- 8888 9999'); 
 
 
 
