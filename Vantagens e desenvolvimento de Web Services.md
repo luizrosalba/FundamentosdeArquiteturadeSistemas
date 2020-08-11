@@ -145,6 +145,20 @@ Programa para simular trocas de msg http
 - https://www.postman.com/downloads/
 - É possivel usar o python e o javascript para utilizar comandos HTTP. 
 
+##  Introdução a arquitetura de sistemas
+
+### Monolito 
+
+figura de monolito 
+
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/monolito.PNG?raw=true)
+
+Servidor (BD -> varias instancias <- http proxy)  <- web app e mobile app 
+
+### microserviços 
+Um serviço para cada aplicação 
+
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/microservico.PNG?raw=true)
 
 
 
