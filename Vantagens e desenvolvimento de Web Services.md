@@ -150,6 +150,14 @@ Programa para simular trocas de msg http
 ### Monolito 
 
 figura de monolito 
+Pros: 
+- Baixa complexidade 
+- Monitoramento simplificado 
+Contra : 
+- Stack Unico 
+- Compartilhamento de recursos 
+- Acoplamento 
+- Mais complexa a escalabilidade 
 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/monolito.PNG?raw=true)
 
@@ -159,18 +167,39 @@ Servidor (BD -> varias instancias <- http proxy)  <- web app e mobile app
 Um serviço para cada aplicação Cluster . Os serviços se comunicam e se completam. O proxy de dentro do cluster decide qual serviço 
 responsável por uma determinada demanda . 
 
+Pros: 
+- stack dinâmica 
+- Simples escalabilidade 
+Contra : 
+- Monitoramento complexo  
+- provisionamento complexo  (docker) 
+- Acoplamento 
 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/microservico.PNG?raw=true)
 
 
 ### microserviços  2
-Não há mais canal de comunicação direta ( message broker). se 2 para de funcionar nao quebra o serviço 1 . Não há comunicação direta entre serviços . Com o MB quando o serviço retorna , ele peg todas as mensagens do mB e se atualiza. SE o MB quebrar a arquitetura inteira quebra. 
-
+Não há mais canal de comunicação direta (message broker). se 2 para de funcionar nao quebra o serviço 1 . Não há comunicação direta entre serviços . Com o MB quando o serviço retorna , ele peg todas as mensagens do mB e se atualiza. SE o MB quebrar a arquitetura inteira quebra. 
+Pros: 
+- stack dinâmica 
+- Simples escalabilidade 
+- Desacoplamento 
+Contra : 
+- Monitoramento mais complexo que o microserviço 1 (MB entre cada serviço) 
+- provisionamento complexo  (docker) 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/micro2.PNG)
 
 ### microserviços  3
 
-Se comunica através de um gerenciador de pipelines . 
+Se comunica através de um gerenciador de pipelines . Os serviços estão desacoplados. O serviço 1 faz sua parte e quebra se for necessario o serviço 2 estiver offline. O pipeline deve saber voltar no serviço 1 (rollback)  e reverter o que foi feito . 
+Pros: 
+- stack dinâmica 
+- Simples escalabilidade 
+- Desacoplamento 
+- Menor Complexidade
+Contra : 
+- Plataforma inteira depende do gerenciador de pipeline 
+- provisionamento complexo  (docker) 
 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/micro3.PNG?raw=true)
 
