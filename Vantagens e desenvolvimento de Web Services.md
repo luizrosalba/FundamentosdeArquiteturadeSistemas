@@ -203,6 +203,7 @@ Contra :
 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/micro3.PNG?raw=true)
 
+### Gerenciamento de erros e volume de acesso 
 
 
 
