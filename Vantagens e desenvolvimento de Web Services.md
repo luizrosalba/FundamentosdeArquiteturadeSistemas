@@ -203,7 +203,16 @@ Contra :
 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/micro3.PNG?raw=true)
 
-### Gerenciamento de erros e volume de acesso 
+## Gerenciamento de erros e volume de acesso 
+Onde é mais complexo : 
+-Processos assíncronos ( Microserviço #2)
+- Pipeline 
+
+Solução 
+- Dead letter queue (fila separada do MB) 
+- Filas de re-tentativas 
+
+
 
 
 
