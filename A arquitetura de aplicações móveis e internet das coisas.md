@@ -32,7 +32,7 @@ mqtt://my-tracker.com/+/gps/position{'lat:-23.53,'Ion':-43.81}
 pub mqtt://my-tracker.com/identificador_usuario/gps/+
 pega todas as informações do gps 
 mqtt://my-tracker.com/+/#
-# é um caractere corigna que recebe todas as informações de todos os sensores de todos os usuarios 
+é um caractere corigna que recebe todas as informações de todos os sensores de todos os usuarios 
 
 QOS -> niveis de qualidade de serviço 
 QoS 0 (at most once)- A mensagem deve ser recebida no máximo uma vez, podendo ser recebida uma vez ou nenhuma, não há confirmação de recebimento.
@@ -42,9 +42,9 @@ QoS 2 (exactly once)- A mensagem deve ser recebida uma única vez, confirmação
 - prova de conceito 
 app android -> mosquito -> node.js-> banco de dados mysql 
 Mosquito -> Broker executável em linux que consegue publicar dados de um android 
--minimo produto viavel 
+- minimo produto viavel 
 GPS embarcado -> HiveMq-> akkaScala JVM ->banco de dados nosql 
--Solução 
+- Solução 
 GPS embarcado -> aws iot core -> aws kinesis firehose -> aws s3 
 
 
