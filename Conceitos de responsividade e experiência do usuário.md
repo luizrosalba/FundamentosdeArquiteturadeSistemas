@@ -91,4 +91,9 @@ consistência elementos ecomuns para usar em seus ícones paleta de cores . nao 
 - Fidelidade do protótipo (baixa ou alta fidelidade) baixa é interessante para não criar expectativas 
 ![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/dasdasd.PNG?raw=true)
 
+## Portfolio , Clientes e apresentação 
+
+- Fundamental ! 
+- Demonstra profissionalismo - problema e solução 
+
 
