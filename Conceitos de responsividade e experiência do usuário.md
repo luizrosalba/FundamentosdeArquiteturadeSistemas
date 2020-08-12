@@ -56,7 +56,39 @@
 - Peso : É a grossura dos caracteres de um tipo (propriedade fonte-weght). Normal , bold , bolder e lighter 
 - obs : helvética pode ter pesos entre 100 e 900 onde 100 Thin até 900 heavy 
 
+## Componentes da Interface do Usuário
 
+- Iconografia  
+Comunicar uma mensagem por uma linguagem visual 
 
+- Manter os ícones simples 
+- Traduzem de forma simples a informação que devem passar 
+- Combine ícones com palavras 
+- escolha ícones familiares 
+- utilize espaçamento 
+consistência elementos ecomuns para usar em seus ícones paleta de cores . nao mais de tres cores par manter o design clear nao tenha medo de repetir elementos em todos os seus ícones 
+- imagem nao é decoração (UX) 
+- Contexto relevante - Usuarios reagem a imagens melhor que a textos 
+-relevância 
+## Guias de estilo  ( manual da marca ) 
+- criado pelo designer que criaram a identidade visual e a correta aplicação da marca 
+- Preserva a uniformidade e coerenciada comunicação da marca 
+
+## Conceitos em projetos 
+
+- Padrão visual para diferentes telas 
+- Responsividade O brasil é um dos paises que mais cresce em smartphones 
+- Mobile first - pensar primeiro no mobile e depois em outras telas 
+- Responsividade - Abrange atingir todas as telas com o app celular , tablet monitor 
+- O futuro do e-commerce é celulares (app commerce ) 
+- Navegar com uma mão 
+- Google resize window resize 
+- Empatir e inclusão Acessibilidade 
+- Conhecer e pesquisar o usuário é fundamental 
+- Entender acessibilidade uxdesign.blog.br oque fazer e o que nao fazer sobre acessibilidade 
+## Prototipagem 
+- Utilidade atualizar modelo de negócios e criar novos produtos ou serviços 
+- Fidelidade do protótipo (baixa ou alta fidelidade) baixa é interessante para não criar expectativas 
+![](https://github.com/luizrosalba/FundamentosdeArquiteturadeSistemas/blob/master/dasdasd.PNG?raw=true)
 
 
